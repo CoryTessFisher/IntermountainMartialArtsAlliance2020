@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<!-- EDIT THE NEXT THREE LINES -->
+
+<title>IMAA - Contact Us</title>
+<meta name="Description" content="Intermountain Martial Arts Alliance - United in Continued Improvement">
+<meta name="KeyWords" content="Martial Arts, Karate, Kaizen, Excellence, Teamwork">
+
+<!-- EDIT THE ABOVE THREE LINES -->
+
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Cache-Control" content="max-age=1200">
+
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="stylesheet" href="menu-styles.css" type="text/css">
+<link rel="stylesheet" href="media-queries.css" type="text/css">
+
+
+<!-- START GOOGLE MAP CODE-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript">
+function initialize() {
+  var myLatlng = new google.maps.LatLng(41.8369, -87.6847);
+  var mapOptions = {
+    zoom: 10,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Location Map'
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!-- END GOOGLE MAP CODE-->
+
+
+
+<script type="text/javascript" src="JQuery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="includes/javascripts-header.js"></script>
+
+</head>
+
+<body class="outer-background">
+
+
+<!-- START PAGE WRAPPER -->
+<div id="fadediv"></div>
+<div id="pagewrapper">
+<div class="pagebox contact-page">
+
+
+<!-- HEADER INCL -->
+<div data-load="includes/header.htm" class="incld"></div>
+
+
+<!-- MENU INCL -->
+<div data-load="includes/menu.htm" class="incld"></div>
+
+
+<!-- START CONTENT OUTER -->
+<div id="contentbox" class="inner-background pageheight">
+
+
+<!-- START MAIN CONTENT LEFT -->
+<div id="left-content">
+
+
+<!-- START CONTENT TEXT -->
+<div class="content-pad td-left just">
+
+
+
+
+
+
+
+<!-- PARAGRAPH 1 -->
+
+<h1 class="title td-left">Contact Us</h1>
+
+<div class="smalltext">
+<span class="hilite">*</span> Below indicates a required field<br>
+</div>
+
+
+<div class="page-splits">&nbsp;<br></div>
+
+<!-- END PARAGRAPH 1 -->
+
+
+
+
+
+
+
+<!-- TO REMOVE FORM DELETE TEXT BETWEEN THESE COMMENTS -->
+<div class="form-box">
+
+
+
+<form method="POST" action="http://formspree.io/cory@coryskarate.com" target="_top" class="formmargin">
+<!-- <input type="hidden" name="recipient" value="cory@coryskarate.com"> -->
+<input type="hidden" name="subject"  value="Website Contact">
+<input type="hidden" name="redirect" value="http://internationalmaratialartsalliance/thanks.htm">
+<input type="hidden" name="required" value="email,email_confirm,your_name">
+<input type="hidden" name="sort" value="through,regarding,your_name,phone,company_name,email,email_confirm,comments">
+<input type="text" name="_gotcha" style="display:none" />
+
+
+
+Name <span class="hilite">*</span><br>
+
+<input type="text" name="your_name" size="30" class="shadeform"><br>
+
+
+
+Company<br>
+
+<input type="text" name="company_name" size="30" class="shadeform"><br>
+
+
+
+Phone<br>
+
+<input type="text" name="phone" size="30" class="shadeform"><br>
+
+
+
+Email <span class="hilite">*</span><br>
+
+<input type="text" name="email" size="30" class="shadeform"><br>
+
+
+
+Please confirm your email <span class="hilite">*</span><br>
+
+<input type="text" name="email_confirm" size="30" class="shadeform"><br>
+
+<br>
+
+
+
+Contact regarding<br>
+
+<div class="contact-select">
+
+<input type="checkbox" name="regarding[]" value="Intermountain Martial Arts Alliance">Intermountain Martial Arts Alliance<br>
+<input type="checkbox" name="regarding[]" value="Cory's Karate">Cory's Karate<br>
+<input type="checkbox" name="regarding[]" value="Kaysville Martial Arts Academy">Kaysville Martial Arts Academy<br>
+<input type="checkbox" name="regarding[]" value="Fighting Brothers Karate">Fighting Brothers Karate<br>
+<input type="checkbox" name="regarding[]" value="Cache Karate">Cache Karate<br>
+<input type="checkbox" name="regarding[]" value="Other">Other<br>
+
+
+
+<br>
+
+</div>
+
+
+How did you find our website?<br>
+
+<select name="through" class="dropdown">
+<option selected value="None selected">Please Select One ----&gt;</option>
+<option value="AOL">AOL</option>
+<option value="Ask">Ask</option>
+<option value="Bing">Bing</option>
+<option value="DuckDuckGo">DuckDuckGo</option>
+<option value="Facebook">Facebook</option>
+<option value="Google">Google</option>
+<option value="Instagram">Instagram</option>
+<option value="LinkedIn">LinkedIn</option>
+<option value="Lycos">Lycos</option>
+<option value="MSN">MSN</option>
+<option value="Pinterest">Pinterest</option>
+<option value="Twitter">Twitter</option>
+<option value="Web Crawler">Web Crawler</option>
+<option value="Yahoo">Yahoo!</option>
+<option value="Banner-Ad">Banner Ad</option>
+<option value="Friend">From a Friend</option>
+<option value="Another Website">Another Website</option>
+<option value="Blog News Group">Blog/News Group</option>
+<option value="Magazine Newspaper">Magazine/Newspaper</option>
+<option value="Radio TV">Radio/TV</option>
+<option value="other">Other</option>
+</select><br>
+
+<br>
+
+
+
+Comments and questions:<br>
+
+<textarea name="comments" rows="9" cols="45" class="textarea"></textarea><br>
+
+<br>
+
+
+
+<input type="submit" value="Submit" class="submitbutton">&nbsp;<input type="reset" value="Clear" class="submitbutton"><br>
+
+
+
+</form>
+</div>
+<!-- TO REMOVE FORM DELETE TEXT BETWEEN THESE COMMENTS -->
+
+
+
+
+
+
+
+<br>
+
+</div>
+<!-- END CONTENT TEXT -->
+
+
+</div>
+<!-- END MAIN CONTENT LEFT -->
+
+
+<!-- START SIDEBAR CONTENT RIGHT -->
+<div id="sidebar-content" class="SB-background">
+
+
+<!-- START SIDEBAR CONTENT TEXT -->
+<div class="sidebar-pad td-center sidebar-text">
+
+
+<!-- START SIDEBAR -->
+<div class="sidebar-width">
+
+
+
+
+
+<!-- START SIDEBAR BOX 1 -->
+
+<div class="sidebar-title">
+
+Contact Us<br>
+
+</div>
+
+<div class="side-img-border">
+<img src="picts/contact.jpg" width="225" height="75" class="sidebar-image" alt="image">
+</div>
+
+<div class="sidebar-box">
+
+<div class="sidebar-textarea sidebar-text">
+
+If you have questions or comments about our web site or group, please contact a <a href="schools.htm">specific school directly</a> or by filling out the form.<br>
+
+
+
+</div>
+
+</div>
+
+<!-- END SIDEBAR BOX 1 -->
+
+
+
+
+
+</div>
+<!-- END SIDEBAR -->
+
+
+<br>
+
+</div>
+<!-- END SIDEBAR CONTENT TEXT -->
+
+</div>
+<!-- END SIDEBAR CONTENT RIGHT -->
+
+
+<!-- CLEAR CONTENT FLOATS -->
+<div class="divclear">&nbsp;<br></div>
+
+
+</div>
+<!-- END CONTENT OUTER -->
+
+
+</div>
+<!-- END PAGE HEIGHT & PAGEBOX -->
+
+
+
+
+
+
+
+<!-- START FOOTER -->
+
+<!-- FOOTER INCL -->
+<div data-load="includes/footer.htm" class="incld"></div>
+
+<!-- FOOTER SCRIPTS -->
+
+<script type="text/javascript" src="includes/javascripts-footer.js"></script>
+
+<!-- END FOOTER -->
+
+
+
+
+
+
+
+</div>
+<!-- END PAGE WRAPPER -->
+
+
+</body>
+</html>

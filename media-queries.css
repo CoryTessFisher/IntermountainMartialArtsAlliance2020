@@ -1,0 +1,309 @@
+/* WARNING: USE CAUTION WHEN EDITING THIS FILE */
+
+/* NOTE: THIS FILE INCLUDES 3 STAGES OF MEDIA QUERIES - SEE help.html */
+
+/* NOTE: TO EDIT COLORS - SEE style.css */
+
+/* CLASSES HERE CAN ALSO BE FOUND IN THE style.css */
+
+
+
+
+
+
+/***************
+START Media Queries #1 (TABLET) WHEN PAGE WIDTH LESS THAN 890 IS ACTIVE (FOR TABLET)
+***************/
+@media handheld and (max-width: 890px),
+   screen and (max-device-width: 890px),
+   screen and (max-width: 890px) 
+	{
+
+
+
+.logo-respond	 { width: 100%; height: auto; }
+
+#contentbox	 { max-width: 720px; }
+
+#left-content 	 { max-width: 435px; }
+
+#sidebar-content { max-width: 250px; }
+
+.footer-links	 { width: 99%; }
+
+.floatlist	 { width: 100%; }
+
+
+/* HOME 3 BOX COLUMNS */
+
+.introbox-text	{ font-size: 12px; }
+
+.introtitle	{ font-size: 15px; }
+
+.introbox-outer	{ width: 690px; margin: 0 auto; }
+
+.introbox	{
+		float: left;
+		width: 230px;  /* DIVIDED BY 3 */
+		}
+
+.introbox-inner	{
+		padding: 10px 20px 10px 20px;
+		margin: 20px 0px 10px 0px;
+		}
+
+.boxes2		{
+		font-size: 12px;
+		padding: 4px 2px 4px 2px;
+		}
+
+
+/* HOME IMAGES WITH ZOOM */
+
+.imagesbox	{
+		width: 188px;
+		height: 80px;
+		}
+
+.introimages img	{
+			width: 188px;
+			height: 80px;
+			}
+
+.introimages img:hover	{ width: 212px; height: 90px; }
+
+
+
+	}
+/***************
+END Media Queries #1
+***************/
+
+
+
+
+
+
+/***************
+START Media Queries #2 (MEDIUM SCREEN DEVICES) WHEN PAGE WIDTH LESS THAN 740 IS ACTIVE
+***************/
+@media handheld and (max-width: 740px),
+   screen and (max-device-width: 740px),
+   screen and (max-width: 740px) 
+	{
+
+
+
+#left-content 		{ width: 100%; min-width: 100%; }
+
+#sidebar-content	{ display: none; border-left: #999999 0px solid; }
+
+.sidebar-width		{ margin: 0 auto 0 0; }
+
+.sidebar-pad		{ padding: 10px 10px 10px 15px; }
+
+.footerhide		{ display: none; }
+
+.footer-splits		{ border-width: 0px 0px 2px 0px; }
+
+.mobile-social		{ display: block; padding: 10px 0px 10px 0px; }
+
+.mobile-social table	{ margin: 0 auto; }
+
+
+/* HEADER ICONS */
+
+.header-ico1, .header-ico2 { display: block; }
+
+
+/* VIDEO MENU */
+
+.vid-thumb 	{ max-width: 40px; }
+
+
+/* CONTACT PAGE */
+
+.contact-page #sidebar-content	{ display: block; }
+
+.contact-page .content-pad	{ display: none; }
+
+
+/* HOME 3 BOX COLUMNS */
+
+.introbox-text	{ font-size: 13px; }
+
+.introbox-text, .introtitle, .boxes2	  { text-align: center; }
+
+.introbox-outer	  { width: 280px; margin: 0 auto; }
+
+.introbox	  { width: 280px; float: none; margin: 0 auto; }
+
+.introbox-inner	  { margin: 10px 0px 10px 0px; }
+
+.introbox-left	  { display: block; }
+
+.introbox-center  { display: block; }
+
+.introbox-right	  { display: block; }
+
+.imagesbox	  { width: 238px; height: 100px; }
+
+.introimages img  { width: 238px; height: 100px; }
+
+.introimages img:hover	{ width: 280px; height: 119px; }
+
+
+
+	}
+/***************
+END Media Queries #2
+***************/
+
+
+
+
+
+
+/***************
+START Media Queries #3 (SMARTPHONE) -  WHEN PAGE WIDTH LESS THAN 482 IS ACTIVE
+                      CLASSES HERE CAN ALSO BE FOUND IN THE style.css
+***************/
+@media handheld and (max-width: 482px),
+   screen and (max-device-width: 482px),
+   screen and (max-width: 482px) 
+	{
+
+
+
+/* MQS FONTS - NEXT LINE IS DEFAULT MOBILE FONT ALL PAGES */
+
+body, div, table { font-size: 14px; line-height: normal; }
+
+.title  	{ font-size: 19px; }
+
+.subtitle  	{ font-size: 15px; }
+
+.smalltext 	{ font-size: 12px; }
+
+.just 		{ text-align: left; }
+
+
+
+
+/* MQS GENERAL */
+
+.hidemobile	{ display: none; }
+
+.splits-xtramargin	{ margin-top: 12px; margin-bottom: 12px; }
+
+
+
+
+/* MQS PAGE & CONTENT HEIGHTS, PADDING & WIDTHS */
+
+.pageheight		{ min-height: 50px; }
+
+.pagebox		{ padding: 0px 0px 0px 0px; }
+
+#contentbox		{ padding: 10px 0px 10px 0px; }
+
+.content-pad		{ padding: 10px 5px 10px 5px; }
+
+#contentbox-home	{ padding: 10px 0px 10px 0px; }
+
+#contentbox-slideshows	{ padding: 10px 0px 10px 0px; }
+
+
+
+
+/* MQS LOGO GRAPHIC, AND TEXT */
+
+#headerdiv	{ padding: 8px 0px 8px 0px; }
+
+.textlogo	{ font-size: 18px; padding: 3px 5px 4px 5px; }
+
+
+
+
+/* MQS FOOTER */
+
+.footer-copyright { font-size: 11px; }
+
+
+
+
+/* MQS SIDEBAR */
+
+.sidebar-text	{ font-size: 13px; line-height: normal; }
+
+.side-links a	{ font-size: 13px; line-height: normal; }
+
+.sidebar-pad	{ padding: 10px 5px 10px 5px; }
+
+
+
+
+/* MQS HOME */
+
+.content-home	{ text-align: left; }
+
+
+
+
+/* MQS HOME JQUERY SLIDESHOW & SLIDESHOW SETS */
+
+.rslides_container		{ border-width: 0px; }
+
+.homeimage-border		{ border-width: 0px; }  /* FOR OPTIONAL HOME PAGE IMAGE */
+
+#homeJQ > .centered-btns_nav	{ display: block; }
+
+.centered-btns_tabs		{ display: none; }
+
+#slidesJQ			{ border-width: 0px; }
+
+.slideshow-text			{ margin: 8px 5px 8px 5px; }
+
+
+
+
+/* CONTACT & QUOTES PAGE */
+
+.form-box			  { margin: 10px 0px 10px 0px; }
+
+.shadeform, .textarea, .dropdown  { font-size: 12px; }
+
+
+
+
+/* STAFF PAGE */
+
+.staff-email	{ font-size: 12px; }
+
+
+
+
+/* LINKS PAGE */
+
+.searchform, .searchbutton  { font-size: 12px; }
+
+
+
+
+/* PAYMENTS PAGE */
+
+.payform, input[type=submit].payform	{ width: 110px; }
+
+.paypalbadge { width: 80px; }
+
+
+
+	}
+/***************
+END Media Queries #3
+***************/
+
+
+
+
+

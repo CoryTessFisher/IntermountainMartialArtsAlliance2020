@@ -1,0 +1,549 @@
+/* --- MEGA MENU Ver 1.2.a --- */
+
+/* OUTER MENU BACKGROUND COLOR */
+
+#menu-box	{
+		min-width: 740px;
+		cursor: default;
+		padding: 0px 0px 0px 0px;
+		margin: 0px 10px 0px 10px;
+		border-top: #000000 1px solid;
+		border-bottom: #000000 3px solid;
+		background: #FFFFFF;
+	/* CORNER ROUNDING */
+		-moz-border-radius: 0px;
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+		}
+
+
+
+
+/* DEFAULTS - & MENU HEIGHT */
+
+#menu, #menu ul, #menu li 
+		{
+		line-height: normal;
+		text-align: left;
+		padding: 0px;
+		margin: 0px;
+		}
+
+#menu		{
+		list-style: none;
+		padding: 0px;
+		margin: 0px auto 0px auto;
+		height: 38px;
+		}
+
+
+/* ALL LEVELS - DEFAULTS */
+
+#menu li a	{
+		display: block;
+		outline: 0;
+		text-decoration: none;
+		}
+
+
+
+
+/* TOP LEVEL */
+
+/* TOP LEVEL - FONT FACE, COLOR & SIZE */
+
+#menu li a.drop {
+	color: #000000;
+	font-family: "Comfortaa", arial, sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 26px;
+	padding-left: 6px;
+	}
+
+
+/* TOP LEVEL - PADDING (SEE MENU HEIGHT ABOVE) */
+
+#menu li {
+	float: left;
+	display: block;
+	text-align: center;
+	position: relative;
+	z-index: 1500;
+	padding: 2px 1px 2px 1px;
+	margin-right: 3px;
+	margin-top: 5px;
+	border: none;
+	}
+
+
+/* TOP LEVEL - HOVER FONT COLOR & HOVER BOTTOM PADDING */
+
+#menu li:hover a.drop { 
+	color: #000000;
+	padding-bottom: 1px;
+	}
+
+
+/* TOP LEVEL - HOVER BORDER, COLORS & PADDING ADJUST */
+
+#menu li:hover {
+	border: 1px solid #999999;
+	padding: 1px 0px 1px 0px;	
+	background: #FFFFFF;
+/* CORNER ROUNDING */
+	-moz-border-radius: 3px 3px 0px 0px;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	border-radius: 3px 3px 0px 0px;
+	}
+
+
+/* TOP LEVEL - MENU ARROWS */
+
+#menu li .drop {
+	padding-right: 22px;
+	background: url("menu-picts/menu-arrow-gray-50.png") no-repeat right 11px;
+	}
+
+#menu li:hover .drop {
+	background: url("menu-picts/menu-arrow-black-100.png") no-repeat right 11px;
+	}
+
+
+
+
+/* SUB LEVEL */
+
+/* SUB LEVEL - BACKGROUND & BORDER COLORS, LOCATION, PADDING, RADIUS */
+
+.dropdown_1columns, 
+.dropdown_2columns, 
+.dropdown_3columns, 
+.dropdown_4columns,
+.dropdown_5columns {
+	float: left;
+	position: absolute;
+	left: -999em;  /* HIDES THE DROP DOWN */
+	text-align: left;
+	margin: 0px auto;
+	padding: 10px 5px 5px 5px;
+	border-top: 3px solid #000000;
+	border-right: 1px solid #C0C0C0;
+	border-bottom: 3px solid #000000;
+	border-left: 1px solid #C0C0C0;
+	background: #FFFFFF;
+/* CORNER ROUNDING */
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+	}
+
+
+/* SUB LEVEL - WIDTHS */
+
+.dropdown_1columns	{ width: 140px; }
+.dropdown_2columns	{ width: 280px; }
+.dropdown_3columns	{ width: 420px; }
+.dropdown_4columns	{ width: 560px; }
+.dropdown_5columns	{ width: 700px; }
+
+#menu li:hover .dropdown_1columns, 
+#menu li:hover .dropdown_2columns, 
+#menu li:hover .dropdown_3columns,
+#menu li:hover .dropdown_4columns,
+#menu li:hover .dropdown_5columns 
+	{
+	left: -1px;
+	top: auto;
+	}
+
+.col_1,
+.col_2,
+.col_3,
+.col_4,
+.col_5	{
+	display: inline;
+	float: left;
+	position: relative;
+	margin: 0px 5px 3px 5px;
+	}
+
+.col_1	{ width: 130px; }
+.col_2	{ width: 270px; }
+.col_3	{ width: 410px; }
+.col_4	{ width: 550px; }
+.col_5	{ width: 690px; }
+
+
+
+
+/* SUB LEVEL - RIGHT MENUS */
+
+#menu .menu_right 
+	{
+	float: right;
+	margin-right: 0px;
+	}
+
+#menu li .align_right {
+/* CORNER ROUNDING */
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+	}
+
+#menu li:hover .align_right 
+	{
+	left: auto;
+	right: -1px;
+	top: auto;
+	}
+
+
+
+
+/* SUB LEVEL - PLAIN TEXT & LINKS FONTS & COLORS */
+
+#menu p, #menu ul li {
+	color: #000000;
+	font-family: "Open Sans", arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: normal;
+	text-align: left;
+	padding: 3px 0px 0px 0px;
+	}
+
+
+/* SUB LEVEL - PLAIN TEXT */
+
+#menu p { margin: 0px 0px 8px 0px; }
+
+
+
+
+/* SUB LEVEL - LINKS & LINK COLORS */
+
+#menu div a:link, #menu div a:visited, #menu div a:active 
+	{
+	font-size: 14px;
+	line-height: 160%;
+	color: #006699;
+	}
+
+/* SUB LEVEL - LINKS HOVER */
+
+#menu div a:hover 
+	{
+	color: #0099FF;
+	}
+
+/* SUB LEVEL - READ MORE LINK */
+
+#menu .readmore	{ padding-top: 4px; }
+
+
+
+
+/* SUB LEVEL - ALL TITLE FONTS & COLORS */
+
+#menu h2, #menu h3, #menu h4 {
+	color: #000000;
+	font-family: "Open Sans", arial, sans-serif;
+	font-weight: 400;
+	line-height: normal;
+	text-align: left;
+	}
+
+
+/* SUB LEVEL - H2 H3 H4 TITLE FONTS */
+
+#menu h2 {
+	font-size: 21px;
+	font-weight: 400;
+	margin: 10px 0px 9px 0px;
+	padding-bottom: 11px;
+	}
+
+#menu h3 {
+	font-size: 15px;
+	font-weight: 700;
+	margin: 3px 0px 9px 0px;
+	padding-bottom: 3px;
+	}
+
+#menu h4 {
+	font-size: 14px;
+	font-weight: 700;
+	margin: 7px 0px 9px 0px;
+	padding-bottom: 3px;
+	}
+
+
+/* TITLE UNDERLINES */
+
+#menu .line1	{ border-bottom: 1px solid #C0C0C0; }
+
+#menu .line2	{ border-bottom: 1px solid #01A81B; }
+
+
+
+
+/* SUB LEVEL - HIGHLIGHT BOXES */
+
+#menu li .hilite_box {
+	background-color: #F0F0F0;
+	color: #000000;
+	padding: 4px 6px 4px 6px;
+/* CORNER ROUNDING */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #999999;
+	}
+
+/* SUB LEVEL - HIGHLIGHT BOX LINKS */
+
+#menu p.hilite_box a:link, #menu p.hilite_box a:visited, #menu p.hilite_box a:active 
+	{
+	font-size: 13px;
+	line-height: 160%;
+	color: #0099FF;
+	}
+
+/* SUB LEVEL - HIGHLIGHT BOX LINKS HOVER */
+
+#menu p.hilite_box a:hover 
+	{
+	color: #000000;
+	}
+
+
+
+
+/* SUB LEVEL - LINK LISTS */
+
+#menu li ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	}
+
+#menu li ul li {
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	float: none;
+	}
+
+#menu li ul li:hover {
+	background: none;
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	}
+
+
+
+
+/* SUB LEVEL - BOXED LINKS */
+
+#menu li .boxlinks li a {
+	color: #FFFFFF;
+	background: #3C90B1;
+	border: 0px solid #000000;
+	margin: 0px 0px 4px 0px;
+	padding: 4px 6px 4px 6px;
+	width: 116px;
+/* CORNER ROUNDING */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+	}
+
+
+/* SUB LEVEL - BOXED LINKS HOVER COLORS */
+
+#menu li .boxlinks li a:hover {
+	background: #56AACB;
+	border: 0px solid #000000;
+	padding: 4px 6px 4px 6px;
+	margin: 0px 0px 4px 0px;
+	}
+
+
+
+
+/* MENU IMAGES */
+
+.imgshadow {
+	background: #FFFFFF;
+	padding: 4px;
+	border: 1px solid #999999;
+	margin-top: 5px;
+	-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+	}
+
+.img_left { 
+	width: auto;
+	float: left;
+	margin: 5px 15px 5px 5px;
+	}
+
+
+
+
+/* CLEARS FLOATS */
+
+.clearfix { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0px; margin: 0px; }
+
+
+
+
+/* FONT DEFAULTS */
+.strong			{ font-weight: 700; }
+.italic			{ font-style: italic; }
+#menu p.td-center	{ text-align: center; }
+
+
+
+
+/* HIDE / UNHIDE BUTTONS */
+
+#menu li.hidemenu1, #menu li.hidemenu2, #menu li.hidemenu3 
+	{ display: block; }
+
+
+
+
+/* WIDE MENUS TO OPEN FAR LEFT */
+
+#menu li.shift-left-top  { position: static; }
+
+#menu li:hover .shift-left
+	{
+	position: absolute;
+	left: 10px;
+	top: auto;
+	z-index: 1500;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+	}
+
+
+
+
+/* WIDE MENUS TO OPEN FAR RIGHT */
+
+#menu li.shift-right-top  { position: static; }
+
+#menu li:hover .shift-right
+	{
+	position: absolute;
+	right: 10px;
+	top: auto;
+	z-index: 1500;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+	}
+
+
+
+
+/***************
+START Media Queries #1 (TABLET) -  WHEN PAGE WIDTH LESS THAN 920 IS ACTIVE - HIDES MENU LINKS!!!!
+***************/
+@media handheld and (max-width: 920px),
+   screen and (max-device-width: 920px),
+   screen and (max-width: 920px) 
+	{
+
+#menu li.hidemenu1	{ display: none; }
+
+	}
+/***************
+END Media Queries #1
+***************/
+
+
+
+
+/***************
+START Media Queries #2 (MEDIUM SCREEN DEVICES) -  WHEN PAGE WIDTH LESS THAN 740 IS ACTIVE - HIDES MENU LINKS!!!!
+***************/
+@media handheld and (max-width: 740px),
+   screen and (max-device-width: 740px),
+   screen and (max-width: 740px) 
+	{
+
+#menu-box		{ min-width: 290px; }
+
+#menu li.hidemenu2	{ display: none; }
+
+	}
+/***************
+END Media Queries #2
+***************/
+
+
+
+
+/***************
+START Media Queries #3 (MEDIUM SCREEN DEVICES) -  WHEN PAGE WIDTH LESS THAN 600 IS ACTIVE - HIDES MENU LINKS!!!!
+***************/
+@media handheld and (max-width: 600px),
+   screen and (max-device-width: 600px),
+   screen and (max-width: 600px) 
+	{
+
+#menu-box		{ margin: 0px 0px 0px 0px; padding: 0px 3px 0px 3px; }
+
+#menu li.hidemenu3	{ display: none; }
+
+
+/* FOR 2 COLUMN MOBILE MENU TO OPEN FAR LEFT */
+
+#menu li.mobile-shift-left-top  { position: static; }
+
+#menu li:hover .mobile-shift-left
+	{
+	position: absolute;
+	left: 3px;
+	top: auto;
+	z-index: 1500;
+	-moz-border-radius: 0px 0px 0px 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+	}
+
+
+	}
+/***************
+END Media Queries #3
+***************/
+
+
+
+
+/***************
+START Media Queries #4 (SMARTPHONE) -  WHEN PAGE WIDTH LESS THAN 482 IS ACTIVE - HIDES MENU LINKS!!!!
+***************/
+@media handheld and (max-width: 482px),
+   screen and (max-device-width: 482px),
+   screen and (max-width: 482px) 
+	{
+
+#menu li.hidemenu4	{ display: none; }
+
+	}
+/***************
+END Media Queries #4
+***************/
+
+
+
